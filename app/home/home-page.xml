@@ -23,7 +23,7 @@
             </TabStrip>
             <TabContentItem>
                 <GridLayout>
-                    <Label class="Wecome" textWrap="true" text="Wecome!!"
+                    <Label class="Wecome" textWrap="true" text="Wecome!"
                         class="h2 description-label" />
                 </GridLayout>
             </TabContentItem>
