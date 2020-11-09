@@ -1,0 +1,74 @@
+<Page loaded="pageLoaded" xmlns="http://www.nativescript.org/tns.xsd">
+    <ActionBar class="bar" title="hello">
+        <WrapLayout>
+			<Image class="logo" src="~/home/native.png" />
+		</WrapLayout>
+    </ActionBar>
+
+    <StackLayout>
+        <BottomNavigation height="500px">
+            <TabStrip>
+                <TabStripItem>
+                    <Label text="Home"></Label>
+                    <Image src="res://home"></Image>
+                </TabStripItem>
+                <TabStripItem>
+                    <Label text="Se connecter"></Label>
+                    <Image src="~/home/login.png" stretch="none" />
+                </TabStripItem>
+                <TabStripItem>
+                    <Label text="S'inscrire"></Label>
+                    <Image src="~/home/signUp.png" stretch="none" />
+                </TabStripItem>
+            </TabStrip>
+            <TabContentItem>
+                <GridLayout>
+                    <Label class="Wecome" textWrap="true" text="Wecome!!"
+                        class="h2 description-label" />
+                </GridLayout>
+            </TabContentItem>
+            <TabContentItem>
+                <GridLayout>
+                    <StackLayout class="form">
+                        <StackLayout class=" input-field">
+                            <TextField class="input" hint="Email">
+                            </TextField>
+                        </StackLayout>
+                        <StackLayout class="input-field">
+                            <TextField class="input" hint="Mot de passe">
+                            </TextField>
+                        </StackLayout>
+                        <Button text="Se connecter" class="-primary">
+                        </Button>
+                    </StackLayout>
+                </GridLayout>
+            </TabContentItem>
+            <TabContentItem>
+                <GridLayout>
+                    <StackLayout class="form">
+                        <StackLayout class=" input-field">
+                            <TextField class="input" hint="Nom">
+                            </TextField>
+                        </StackLayout>
+                        <StackLayout class=" input-field">
+                            <TextField class="input" hint="Prénom">
+                            </TextField>
+                        </StackLayout>
+                        <StackLayout class=" input-field">
+                            <TextField class="input" hint="Adresse mail">
+                            </TextField>
+                        </StackLayout>
+                        <StackLayout class="input-field">
+
+                            <TextField class="input" hint="Mot de passe">
+
+                            </TextField>
+                        </StackLayout>
+                        <Button text="S'inscrire" class="-primary">
+                        </Button>
+                    </StackLayout>
+                </GridLayout>
+            </TabContentItem>
+        </BottomNavigation>
+    </StackLayout>
+</Page>
